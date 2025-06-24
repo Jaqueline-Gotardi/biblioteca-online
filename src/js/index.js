@@ -1,45 +1,41 @@
-/* passo 1 : pegar o botao de aplicar filtros do HTML e mandar pro JS */
-const botaoFiltrar = (document.querySelector('.btn-filtrar'));
+// 1. Pega o botão "Aplicar filtros"
+const botaoFiltrar = document.querySelector('.btn-filtrar');
 
-/* passso 2: escutar o clique do botao de aplicar filtros */
-botaoFiltrar.addEventListener('click', function(){
-    console.log('clicou no botão filtrar');
+// 2. Quando o botão for clicado, executa o filtro
+botaoFiltrar.addEventListener('click', () => {
+    // Pega o valor selecionado no filtro de categoria
+    const categoriaSelecionada = document.querySelector('#categoria').value.toLowerCase();
 
-    /* passo 3: pegar os valores dos campos de categoria e preço */
-    const categoriaSelecionada = document.querySelector('#categoria').value;
-    const precoMaximoSelecionado = document.querySelector('#preco').value;
+    // Pega o valor digitado no filtro de preço
+    const precoMaximo = parseFloat(document.querySelector('#preco').value);
 
-    /* passo 4: para cada carta, verificar se ela deve ter mostrada ou escondida baseado nos filtros que a pessoa digitou */
+    // Pega todas as cartas na tela
     const cartas = document.querySelectorAll('.carta');
-    cartas.forEach(function (carta) {
-        const categoriaCarta = carta.dataset.categoria;
-        const precoCarta = carta.dataset.preco;
-        let mostrarCarta = true;
-        console.log('a categoriaSelecionada foi:' , categoriaSelecionada)
 
-        const temFiltroDeCategoria = categoriaSelecionada !== '';
+    // 3. Para cada carta, verifica se ela deve aparecer ou não
+    cartas.forEach((carta) => {
+        const categoriaCarta = carta.dataset.categoria.toLowerCase();
+        const precoCarta = parseFloat(carta.dataset.preco);
 
-            const cartaNaoBateComFiltroDeCategoria = categoriaSelecionada.toLowerCase() !== categoriaCarta.toLowerCase();
+        let mostrar = true;
 
-            if(temFiltroDeCategoria &&
-            cartaNaoBateComFiltroDeCategoria) {
-                mostrarCarta = false;
-            }
+        // Se tiver filtro de categoria e a carta for diferente, esconde
+        if (categoriaSelecionada && categoriaSelecionada !== categoriaCarta) {
+            mostrar = false;
+        }
 
-            const temFiltroDePreco = precoMaximoSelecionado !== '';
-            const cartaNaoBateComFiltroDePrecoMaximo = parseFloat(precoCarta) > parseFloat
-            (precoMaximoSelecionado)
+        // Se tiver filtro de preço e a carta for mais cara, esconde
+        if (!isNaN(precoMaximo) && precoCarta > precoMaximo) {
+            mostrar = false;
+        }
 
-            if(precoMaximoSelecionado !== '' && parseFloat(precoCarta) > parseFloat(precoMaximoSelecionado)){
-                mostrarCarta = false;
-            }
-
-            if(mostrarCarta) {
-                carta.classList.add("mostrar");
-                 carta.classList.remove("esconder");
-            }else {
-                carta.classList.remove("mostrar");
-                carta.classList.add("esconder");
-            }
+        // Mostra ou esconde a carta conforme os filtros
+        if (mostrar) {
+            carta.classList.add('mostrar');
+            carta.classList.remove('esconder');
+        } else {
+            carta.classList.remove('mostrar');
+            carta.classList.add('esconder');
+        }
     });
 });
