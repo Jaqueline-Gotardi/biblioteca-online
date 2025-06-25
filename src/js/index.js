@@ -10,32 +10,32 @@ botaoFiltrar.addEventListener('click', () => {
     const precoMaximo = parseFloat(document.querySelector('#preco').value);
 
     // Pega todas as cartas na tela
-    const cartas = document.querySelectorAll('.carta');
+    const livros = document.querySelectorAll('.livro');
 
     // 3. Para cada carta, verifica se ela deve aparecer ou não
-    cartas.forEach((carta) => {
-        const categoriaCarta = carta.dataset.categoria.toLowerCase();
-        const precoCarta = parseFloat(carta.dataset.preco);
+    livros.forEach((livro) => {
+        const categoriaLivros = livro.dataset.categoria.toLowerCase();
+        const precoLivro = parseFloat(livro.dataset.preco);
 
         let mostrar = true;
 
         // Se tiver filtro de categoria e a carta for diferente, esconde
-        if (categoriaSelecionada && categoriaSelecionada !== categoriaCarta) {
+        if (categoriaSelecionada && categoriaSelecionada !== categoriaLivros) {
             mostrar = false;
         }
 
         // Se tiver filtro de preço e a carta for mais cara, esconde
-        if (!isNaN(precoMaximo) && precoCarta > precoMaximo) {
+        if (!isNaN(precoMaximo) && precoLivro > precoMaximo) {
             mostrar = false;
         }
 
         // Mostra ou esconde a carta conforme os filtros
         if (mostrar) {
-            carta.classList.add('mostrar');
-            carta.classList.remove('esconder');
+            livro.classList.add('mostrar');
+            livro.classList.remove('esconder');
         } else {
-            carta.classList.remove('mostrar');
-            carta.classList.add('esconder');
+            livro.classList.remove('mostrar');
+            livro.classList.add('esconder');
         }
     });
 });

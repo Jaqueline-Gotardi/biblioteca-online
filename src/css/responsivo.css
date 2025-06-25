@@ -14,8 +14,8 @@
         gap: 16px;
     }
  
-    .container .filtros .categorias-cartas,
-    .container .filtros .preco-cartas,
+    .container .filtros .categorias-livros,
+    .container .filtros .preco-livros,
     .container .filtros .btn-filtrar {
         width: 65% ;
     }
@@ -24,14 +24,14 @@
         align-self: center;
     }
 
-    .container .cartas {
+    .container .livros {
         justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
-    .container .filtros .categorias-cartas,
-    .container .filtros .preco-cartas,
+    .container .filtros .categorias-livros,
+    .container .filtros .preco-livros,
     .container .filtros .btn-filtrar {
         width: 100% ;
     }
