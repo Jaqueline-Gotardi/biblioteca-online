@@ -1,5 +1,5 @@
  body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif; 
  }
 
  .cabecalho { 
@@ -10,7 +10,7 @@
     margin-bottom: 60px;
  }
  
- .container {
+ .container { 
     max-width: 1170px;
     margin: 0 auto;
  }

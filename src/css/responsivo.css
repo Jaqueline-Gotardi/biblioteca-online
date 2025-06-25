@@ -9,11 +9,11 @@
 
     .container .filtros {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         align-items: center;
         gap: 16px;
     }
-
+ 
     .container .filtros .categorias-cartas,
     .container .filtros .preco-cartas,
     .container .filtros .btn-filtrar {
