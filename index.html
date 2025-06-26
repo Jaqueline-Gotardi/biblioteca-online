@@ -10,26 +10,33 @@
     <link rel="preconect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/imagens/favicon-32x32.png" type="image/x-icon">
 
-    <title>Semana do Zero ao programador contratado - Projeto Magick IA</title>
-</head>
+    <title>Projeto Biblioteca-Online</title>
+</head> 
 <body>   
 
     <header class="cabecalho"> 
-        <img src="./src/imagens/logo.png" alt="logo magickIA">
+        <img src="./src/imagens/logo.png" alt="logo biblioteca-online">
     </header>
 
     <main class="container">
         <h1 class="livros">Livros</h1>
-
         <div class="filtros">
             <div class="categorias-livros">
                 <label for="categoria">Categoria</label>
                 <select id="categoria" class="categoria">
-                    <option value="">Selecione um livro</option>
-                    <option value="comum">Comum</option>
+                    <option value="">Todos os livros</option>
+
+                    <!-- <option value="comum">Comum</option>
                     <option value="rara">Rara</option>
-                    <option value="épica">Épica</option>
+                    <option value="épica">Épica</option> -->
+
+                    <option value="romance">Romance</option>
+                    <option value="autoajuda">Autoajuda</option>
+                    <option value="Não Ficção">Não Ficção</option>
+                    <option value="drama">Drama</option>
+                    <option value="Ficção Científica">Ficção Científica</option>
                 </select>
             </div>
             <div class="preco-livros">
@@ -50,111 +57,146 @@
             Ficção científica: Série de divergente,
              -->
 
-             <li class="livro" data-categoria="Épica" data-preco="3000">
+             <li class="livro" data-categoria="Romance" data-preco="3000">
                 <img src="./src/imagens/colecao-LaraJean.png" alt="Livro Lara-Jean">
                 <div class="informacoes">
                     <h2 class="nome-livro">Coleção: Para todos os garotos que já amei</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Romance</span>
+                    <span class="autor">Autor(a): Jenny Han</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar a coleção de livros: Para todos os garotos que ja amei!" class="btn-comprar" target="_blank">Comprar</a>
+
+
+
+
+
+                    
+
+
+                   
+
+
+
+
+
+
+
+
+
+                    
+
                 </div>
             </li>
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Romance" data-preco="3000">
                 <img src="./src/imagens/CartasDeAmorAosMortos.png" alt="Livro Cartas-de-amor-aos-mortos">
                 <div class="informacoes">
                     <h2 class="nome-livro">Cartas de amor aos mortos</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Romance</span>
+                    <span class="autor">Autor(a): Ava Dellaira</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar o livro: Cartas de amor aos mortos!" class="btn-comprar" target="_blank">Comprar</a>
+
+
+                  
+                    
                 </div>
             </li>
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Romance" data-preco="3000">
                 <img src="./src/imagens/trilogia-NaoSeApegaNao.png" alt="Coleção Não-se-apega-não">
                 <div class="informacoes">
                     <h2 class="nome-livro">Coleção: Não se apega não</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Romance</span>
+                    <span class="autor">Autor(a): Isabela Freitas</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar a coleção de livros: Não se apega não!" class="btn-comprar" target="_blank">Comprar</a>
                 </div>
             </li>
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Romance" data-preco="3000">
                 <img src="./src/imagens/UmaSegundaChance.png" alt="Livro Uma-segunda-chance">
                 <div class="informacoes">
                     <h2 class="nome-livro">Uma segunda chance</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Romance</span>
+                    <span class="autor">Autor(a): Colleen Hoover</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar o livro: Uma segunda chance!" class="btn-comprar" target="_blank">Comprar</a>
                 </div>
             </li>
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Autoajuda" data-preco="3000">
                 <img src="./src/imagens/Ansiedade-MalDoSeculo.png" alt="Livro Ansiedade-mal-do-seculo">
                 <div class="informacoes">
                     <h2 class="nome-livro">Ansiedade: Como enfrentar o mal do século</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Autoajuda</span>
+                    <span class="autor">Autor(a): Augusto Cury</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar o livro: Ansiedade: Mal do século!" class="btn-comprar" target="_blank">Comprar</a>
                 </div>
             </li>
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Autoajuda" data-preco="3000">
                 <img src="./src/imagens/500DiasSemVoce.png" alt="Livro 500-dias-sem-você">
                 <div class="informacoes">
                     <h2 class="nome-livro">500 dias sem você</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Autoajuda</span>
+                    <span class="autor">Autor(a): Samantha Silvany</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar o livro: 500 dias sem você!" class="btn-comprar" target="_blank">Comprar</a>
                 </div>
             </li>
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Autoajuda" data-preco="3000">
                 <img src="./src/imagens/TalvezVoceDevaConversarComAlguem.png" alt="Livro Talvez-voce-deva-conversar-com-alguem">
                 <div class="informacoes">
                     <h2 class="nome-livro">Talvez você deva conversar com alguém</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Autoajuda</span>
+                    <span class="autor">Autor(a): Lori Gottlieb</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar o livro: Talvez vocễ deva conversar com alguém!" class="btn-comprar" target="_blank">Comprar</a>
                 </div>
-            </li>
+            </li> 
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Não Ficção" data-preco="3000">
                 <img src="./src/imagens/ManualDoFBi.png" alt="Livro Manual-do-FBI">
                 <div class="informacoes">
                     <h2 class="nome-livro">Manual de persuasão do FBI</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Não Ficção</span>
+                    <span class="autor">Autor(a): Jack Schafer</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar o Manual de persuasão do FBI!" class="btn-comprar" target="_blank">Comprar</a>
                 </div>
             </li>
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Drama" data-preco="3000">
                 <img src="./src/imagens/AnneFrank.png" alt="Livro Anne-Frank">
                 <div class="informacoes">
                     <h2 class="nome-livro">O diário de Anne Frank</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Drama</span>
+                    <span class="autor">Autor(a): Anne Frank</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar o diário de Anne-Frank!" class="btn-comprar" target="_blank">Comprar</a>
                 </div>
             </li>
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Drama" data-preco="3000">
                 <img src="./src/imagens/OLadoBomDaVida.png" alt="Livro O-lado-bom-da-vida">
                 <div class="informacoes">
                     <h2 class="nome-livro">O lado bom da vida</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Drama</span>
+                    <span class="autor">Autor(a): Matthew Quick</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar o livro: O lado bom da vida!" class="btn-comprar" target="_blank">Comprar</a>
                 </div>
             </li>
 
-            <li class="livro" data-categoria="Épica" data-preco="3000">
+            <li class="livro" data-categoria="Ficção Científica" data-preco="3000">
                 <img src="./src/imagens/Trilogia-Divergente.png" alt="Coleção Divergentes">
                 <div class="informacoes">
                     <h2 class="nome-livro">Coleção: Divergentes</h2>
-                    <span class="categoria">Categoria: Épica</span>
+                    <span class="categoria">Categoria: Ficção Científica</span>
+                    <span class="autor">Autor(a): Veronica Roth</span>
                     <span class="preco"> R$ 3.000,00</span>
                     <a href="https://wa.me/97984266917?text=Olá, quero comprar a coleção de livros: Divergentes!" class="btn-comprar" target="_blank">Comprar</a>
                 </div>
@@ -223,9 +265,8 @@
  -->
         </ul>
     </main>
-
+    
     <footer class="rodape">@2025 - Todos os direitos reservados</footer>
-
     <script src="./src/js/index.js"></script>
 
 </body>

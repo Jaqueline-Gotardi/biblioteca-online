@@ -16,7 +16,7 @@ botaoFiltrar.addEventListener('click', () => {
     livros.forEach((livro) => {
         const categoriaLivros = livro.dataset.categoria.toLowerCase();
         const precoLivro = parseFloat(livro.dataset.preco);
-
+ 
         let mostrar = true;
 
         // Se tiver filtro de categoria e a carta for diferente, esconde
