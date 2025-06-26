@@ -158,32 +158,29 @@
     background-color: rgb(63, 38, 38);
  }
  
+.container .livro {
+    position: relative;
+}
 
+.container .livro .informacoes-livro {
+   position: absolute;
+   width: 80%;
+   top: 20px;
+   padding: 5px;
+   text-align: left;
+   transition: all 0.3s ease;
+   opacity: 0; 
+}
 
+.container .livros .livro:hover .informacoes-livro:hover {
+    opacity: 0.7;
+} 
 
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
+.informacoes-livro:hover p {
+    color: rgb(214, 224, 218);
+    font-weight: 800;
+    background-color: #282828;
+} 
 
  .rodape {
     display: flex;
