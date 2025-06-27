@@ -170,6 +170,7 @@
    text-align: left;
    transition: all 0.3s ease;
    opacity: 0; 
+   font-size: 20px;
 }
 
 .container .livros .livro:hover .informacoes-livro:hover {
