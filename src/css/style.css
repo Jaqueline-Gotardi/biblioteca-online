@@ -12,6 +12,10 @@
     margin-bottom: 60px;
  }
  
+ .cabecalho img {
+   width: 14%;
+ }
+
  .container { 
     max-width: 1170px;
     margin: 0 auto;
