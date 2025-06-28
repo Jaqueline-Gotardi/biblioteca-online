@@ -11,7 +11,7 @@ botaoFiltrar.addEventListener('click', () => {
 
     // Pega todas as cartas na tela
     const livros = document.querySelectorAll('.livro');
-
+ 
     // 3. Para cada carta, verifica se ela deve aparecer ou não
     livros.forEach((livro) => {
         const categoriaLivros = livro.dataset.categoria.toLowerCase();
