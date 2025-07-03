@@ -50,7 +50,7 @@ A ideia surgiu como forma de unir meu gosto por organização e leitura com a pr
 
 ## 📝 Créditos
 
-💡 Curso: [Dobro | dev quiest-dev](https://dobro.com.br)  
+💡 Curso: [Dobro | dev quest](https://dobro.com.br)  
 🎓 Projeto desenvolvido com base no desafio proposto pelo curso, com tema personalizado por mim.
 
 ---
